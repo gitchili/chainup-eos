@@ -1,6 +1,6 @@
 # crypto-meetup.eos
 
-> vue.js + vuetify +firebae _working
+> vue.js + vuetify +firebase _working
 
 ## Build Setup
 
