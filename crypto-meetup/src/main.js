@@ -17,15 +17,19 @@ import {
 import '../node_modules/vuetify/src/stylus/main.styl'
 
 Vue.use(Vuetify, {
+
+  /* my theme colors [#a69eb0, #efeff2, #f2e2cd, #dadae3, #000000, #D50000, #66BB6A   ] */
   theme: {
-    primary: '#D32F2F',
-    accent: '#FF5252',
-    secondary: '#BDBDBD',
-    info: '#1E88E5',
-    warning: '#FFA000',
+    primary: '#000000',
+    accent: '#a69eb0',
+    secondary: '#efeff2',
+    info: '#f2e2cd',
+    warning: '#dadae3',
     error: '#D50000',
     success: '#66BB6A'
   },
+
+  /* vuetify compenents */
   components: {
     VApp,
     VNavigationDrawer,
