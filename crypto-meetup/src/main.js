@@ -12,6 +12,7 @@ import {
   VIcon,
   VGrid,
   VToolbar,
+  VCarousel,
   transitions
 } from 'vuetify'
 import '../node_modules/vuetify/src/stylus/main.styl'
@@ -22,8 +23,8 @@ Vue.use(Vuetify, {
   theme: {
     primary: '#000000',
     accent: '#a69eb0',
-    secondary: '#efeff2',
-    info: '#f2e2cd',
+    secondary: '#a69eb0',
+    info: '#000000',
     warning: '#dadae3',
     error: '#D50000',
     success: '#66BB6A'
@@ -39,6 +40,7 @@ Vue.use(Vuetify, {
     VIcon,
     VGrid,
     VToolbar,
+    VCarousel,
     transitions
   }
 })
