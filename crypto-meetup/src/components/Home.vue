@@ -10,12 +10,12 @@
     </v-layout>
     <v-layout row wrap class="mt-2">
       <v-flex xs12>
-        <v-carousel>
+        <v-carousel style="cursor: pointer;">
           <v-carousel-item
             v-for="meetup in meetups"
             :src="meetup.imageUrl"
             :key="meetup.id"
-            @click.native="onLoadMeetup">
+            @click.native="onLoadMeetup(meetup.id)">
             <div class="title">
               {{meetup.title}}
             </div>
@@ -37,6 +37,11 @@
       return {
         meetups: [{imageUrl: 'https://3iq.ca/wp-content/uploads/2018/01/Blockchain_Basics_Cover2-1200x675.jpg', id: 'afajfjadfaadfa323', title: ''},
           {imageUrl: 'https://g3.dcdn.lt/images/pix/12d795ad5ec28e1bdf-77732867.jpg', id: 'aadsfhbkhlk1241', title: ''}]
+      }
+    },
+    methods: {
+      onLoadMeetup (id) {
+        this.$router.push('/meetups/' + id)
       }
     }
   }
