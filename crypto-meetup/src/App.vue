@@ -1,7 +1,8 @@
 <template>
  
   <v-app>
-    <v-navigation-drawer fixed v-model="sideNav">
+    <v-navigation-drawer v-model="sideNav" absolute
+      temporary>
       <v-list>
         <!-- mapping key  to my array & linking -->
         <v-list-tile

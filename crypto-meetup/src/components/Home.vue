@@ -16,13 +16,13 @@
             :src="meetup.imageUrl"
             :key="meetup.id">
             <div class="title">
-              {{ meetup.title }}
+              {{meetup.title}}
             </div>
           </v-carousel-item>
         </v-carousel>
       </v-flex>
     </v-layout>
-    <v-layout row wrap  class="mt-2">
+    <v-layout row wrap class="mt-2">
       <v-flex xs12 class="text-xs-center">
        <p>Join our awesome meetups!</p>
       </v-flex>
@@ -34,14 +34,9 @@
   export default {
     data () {
       return {
-        meetups: [
-          /*
-          { imageUrl: 'https://3iq.ca/wp-content/uploads/2018/01/Blockchain_Basics_Cover2-1200x675.jpg', id: 'afajfjadfaadfa323', title: '' },
-          { imageUrl: 'https://g3.dcdn.lt/images/pix/12d795ad5ec28e1bdf-77732867.jpg', id: 'aadsfhbkhlk1241', title: '' }
-          */
-        ]
+        meetups: [{imageUrl: 'https://3iq.ca/wp-content/uploads/2018/01/Blockchain_Basics_Cover2-1200x675.jpg', id: 'afajfjadfaadfa323', title: ''},
+          {imageUrl: 'https://g3.dcdn.lt/images/pix/12d795ad5ec28e1bdf-77732867.jpg', id: 'aadsfhbkhlk1241', title: ''}]
       }
     }
   }
 </script>
-
