@@ -13,6 +13,7 @@ import {
   VGrid,
   VToolbar,
   VCarousel,
+  VCard,
   transitions
 } from 'vuetify'
 import '../node_modules/vuetify/src/stylus/main.styl'
@@ -33,6 +34,7 @@ Vue.use(Vuetify, {
   /* vuetify compenents */
   components: {
     VApp,
+    VCard,
     VNavigationDrawer,
     VFooter,
     VList,
