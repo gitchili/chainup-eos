@@ -8,6 +8,9 @@ import {
   VApp,
   VNavigationDrawer,
   VFooter,
+  VDatePicker,
+  VTimePicker,
+  VPicker,
   VList,
   VBtn,
   VTextField,
@@ -36,6 +39,9 @@ Vue.use(Vuetify, {
   /* vuetify compenents */
   components: {
     VApp,
+    VPicker,
+    VDatePicker,
+    VTimePicker,
     VCard,
     VNavigationDrawer,
     VFooter,
