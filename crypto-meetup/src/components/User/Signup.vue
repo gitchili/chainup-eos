@@ -79,7 +79,7 @@
     },
     methods: {
       onSignup () {
-        console.log({email: this.email, password: this.password})
+        this.$store.dispatch('signUserUp', {email: this.email, password: this.password})
       }
     }
   }
