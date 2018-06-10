@@ -4,6 +4,8 @@ import App from './App'
 import router from './router'
 import { store } from './store'
 import firebase from 'firebase'
+import AlertCmp from './components/Shared/Alert.vue'
+
 import {
   Vuetify,
   VApp,
@@ -11,6 +13,7 @@ import {
   VFooter,
   VDatePicker,
   VTimePicker,
+  VAlert,
   VPicker,
   VList,
   VBtn,
@@ -40,6 +43,7 @@ Vue.use(Vuetify, {
   /* vuetify compenents */
   components: {
     VApp,
+    VAlert,
     VPicker,
     VDatePicker,
     VTimePicker,
@@ -58,6 +62,8 @@ Vue.use(Vuetify, {
 })
 
 Vue.config.productionTip = false
+
+Vue.component('app-alert', AlertCmp)
 
 /* eslint-disable no-new */
 new Vue({
