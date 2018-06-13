@@ -1,7 +1,6 @@
 <template>
   <v-app>
-    <v-navigation-drawer v-model="sideNav" absolute
-      temporary>
+    <v-navigation-drawer temporary absolute v-model="sideNav">
       <v-list>
         <v-list-tile
           v-for="item in menuItems"
@@ -55,7 +54,6 @@
     </main>
   </v-app>
 </template>
-
 
 <script>
   export default {

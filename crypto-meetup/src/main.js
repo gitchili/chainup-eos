@@ -40,7 +40,7 @@ Vue.use(Vuetify, {
     success: '#66BB6A'
   },
 
-  /* vuetify compenents */
+    /* vuetify compenents */
   components: {
     VApp,
     VAlert,
@@ -71,7 +71,7 @@ new Vue({
   router,
   store,
   components: { App },
-  template: '<App/>',
+  render: h => h(App),
   created () {
     firebase.initializeApp({
       apiKey: 'AIzaSyALpZbpcdZ0HLMg1KqkFZ1VTd6y_CJ32eU',
